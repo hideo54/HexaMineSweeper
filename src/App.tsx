@@ -13,7 +13,10 @@ const Hexagon = (props: {
   const b = props.position[1];
   const topVw = 50 + (b - a) * 0.5 * props.width;
   const leftVw = (a + b) * 0.866 * props.width;
-  const fill = props.status === 'unknown' ? 'gray' : (props.status === 'flagged' ? 'red' : 'white');
+  let fill = 'gray';
+  if (props.status === 'flagged') {
+    fill = 'blue';
+  }
   return (
     <div style={{
       width: `${props.width}vw`,

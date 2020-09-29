@@ -84,6 +84,12 @@ function App() {
         <li>右クリックでフラグを立てます (青色になります)。</li>
         <li>地雷 (赤色) をめくってしまったらゲームオーバーです。</li>
         <li>ゲームクリアしても特に何も出ません。ごめんね。未改善。</li>
+        <li>このゲームは
+          <a href='https://www.youtube.com/watch?v=TkzetQiRsts' target='_blank' rel='noopener'>
+            TSG LIVE! 5 企画「ライブゲームプログラミング Day 2」
+          </a>
+          にて作成されました。
+        </li>
       </ul>
       <div>{masu}</div>
     </>

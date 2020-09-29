@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { range, sampleSize } from 'lodash';
 import './App.css';
 
-const L = 8;
+const L = 10;
 
 type Status = 'unknown' | 'flagged' | 'revealed';
 

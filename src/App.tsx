@@ -9,21 +9,31 @@ type Status = 'unknown' | 'flagged' | 'revealed';
 const Hexagon = (props: {
   width: number;
   i: number;
-  status: Status;
   mines: number[];
 }) => {
-  const { i } = props;
-  const a = Math.floor(props.i / L);
-  const b = props.i % L;
-  const topVw = 50 + (b - a) * 0.5 * props.width;
-  const leftVw = (a + b) * 0.866 * props.width;
+  const [status, setStatus] = useState<Status>('unknown');
+  const reveal = (e: any) => {
+    e.preventDefault();
+    setStatus('revealed');
+  };
+  const setFlag = (e: any) => {
+    e.preventDefault();
+    if (status === 'flagged') {
+      setStatus('unknown');
+    } else {
+      setStatus('flagged');
+    }
+  };
+  const { width, i, mines } = props;
+  const a = Math.floor(i / L);
+  const b = i % L;
+  const topVw = 50 + (b - a) * 0.5 * width;
+  const leftVw = (a + b) * 0.866 * width;
   let fill = 'gray';
-  if (props.status === 'flagged') {
-    fill = 'blue';
-  }
+  if (status === 'flagged') fill = 'blue';
   let num = 0;
-  if (props.status === 'revealed') {
-    if (props.mines.includes(props.i)) {
+  if (status === 'revealed') {
+    if (mines.includes(props.i)) {
       fill = 'red';
       alert('GAME OVER!');
     } else {
@@ -45,7 +55,7 @@ const Hexagon = (props: {
       position: 'absolute',
       top: `${topVw}vw`,
       left: `${leftVw}vw`,
-    }}>
+    }} onClick={reveal} onContextMenu={setFlag}>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 86.6">
         <polygon
           points='25.29 86.1 0.58 43.3 25.29 0.5 74.71 0.5 99.42 43.3 74.71 86.1 25.29 86.1'
@@ -60,45 +70,15 @@ const Hexagon = (props: {
   );
 };
 
-const Hexa = (props: {
-  i: number;
-  mines: number[];
-}) => {
-  const [status, setStatus] = useState<Status>('unknown');
-  const reveal = (e: any) => {
-    e.preventDefault();
-    setStatus('revealed');
-  };
-  const setFlag = (e: any) => {
-    e.preventDefault();
-    if (status === 'flagged') {
-      setStatus('unknown');
-    } else {
-      setStatus('flagged');
-    }
-  };
-  return (
-    <div onClick={reveal} onContextMenu={setFlag}>
-      <Hexagon
-        width={10}
-        i={props.i}
-        status={status}
-        mines={props.mines}
-      />
-    </div>
-  );
-};
-
 function App() {
-  const mines = sampleSize(range(L ** 2), L);
-  console.log(mines);
+  const [mines, setMines] = useState<number[]>(sampleSize(range(L ** 2), L));
   const masu = range(L ** 2).map(i =>
-    <Hexa i={i} mines={mines} />
+    <Hexagon key={i} width={5} i={i} mines={mines} />
   );
   return (
     <>
       <h1>HexaMineSweeper</h1>
-      {masu}
+      <div>{masu}</div>
     </>
   );
 }

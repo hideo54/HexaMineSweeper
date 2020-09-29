@@ -71,7 +71,7 @@ const Hexagon = (props: {
 };
 
 const App = () => {
-  const [mines, setMines] = useState<number[]>(sampleSize(range(L ** 2), L));
+  const [mines, setMines] = useState<number[]>(sampleSize(range(L ** 2), L * 3));
   const masu = range(L ** 2).map(i =>
     <Hexagon key={i} width={5} i={i} mines={mines} />
   );

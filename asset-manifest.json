@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/HexaMineSweeper/static/css/main.5f361e03.chunk.css",
-    "main.js": "/HexaMineSweeper/static/js/main.73b207c1.chunk.js",
-    "main.js.map": "/HexaMineSweeper/static/js/main.73b207c1.chunk.js.map",
+    "main.js": "/HexaMineSweeper/static/js/main.377982ef.chunk.js",
+    "main.js.map": "/HexaMineSweeper/static/js/main.377982ef.chunk.js.map",
     "runtime-main.js": "/HexaMineSweeper/static/js/runtime-main.98ec4978.js",
     "runtime-main.js.map": "/HexaMineSweeper/static/js/runtime-main.98ec4978.js.map",
     "static/js/2.0af5561a.chunk.js": "/HexaMineSweeper/static/js/2.0af5561a.chunk.js",
     "static/js/2.0af5561a.chunk.js.map": "/HexaMineSweeper/static/js/2.0af5561a.chunk.js.map",
     "index.html": "/HexaMineSweeper/index.html",
-    "precache-manifest.ca20b3e967888ee13b0b9a8ec6226716.js": "/HexaMineSweeper/precache-manifest.ca20b3e967888ee13b0b9a8ec6226716.js",
+    "precache-manifest.d62d221adb0b031eb6909e4bc88d9ab2.js": "/HexaMineSweeper/precache-manifest.d62d221adb0b031eb6909e4bc88d9ab2.js",
     "service-worker.js": "/HexaMineSweeper/service-worker.js",
     "static/css/main.5f361e03.chunk.css.map": "/HexaMineSweeper/static/css/main.5f361e03.chunk.css.map",
     "static/js/2.0af5561a.chunk.js.LICENSE.txt": "/HexaMineSweeper/static/js/2.0af5561a.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.98ec4978.js",
     "static/js/2.0af5561a.chunk.js",
     "static/css/main.5f361e03.chunk.css",
-    "static/js/main.73b207c1.chunk.js"
+    "static/js/main.377982ef.chunk.js"
   ]
 }

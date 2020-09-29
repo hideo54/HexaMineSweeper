@@ -47,7 +47,11 @@ const Hexagon = (props: {
       left: `${leftVw}vw`,
     }}>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 86.6">
-        <polygon points="25.29 86.1 0.58 43.3 25.29 0.5 74.71 0.5 99.42 43.3 74.71 86.1 25.29 86.1" fill={fill} />
+        <polygon
+          points='25.29 86.1 0.58 43.3 25.29 0.5 74.71 0.5 99.42 43.3 74.71 86.1 25.29 86.1'
+          fill={fill}
+          stroke='gray'
+        />
         {num >= 1 &&
           <text x="50" y="50" fontSize="32">{num}</text>
         }

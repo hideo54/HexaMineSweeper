@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/HexaMineSweeper/static/css/main.5f361e03.chunk.css",
-    "main.js": "/HexaMineSweeper/static/js/main.377982ef.chunk.js",
-    "main.js.map": "/HexaMineSweeper/static/js/main.377982ef.chunk.js.map",
+    "main.css": "/HexaMineSweeper/static/css/main.b4f074ca.chunk.css",
+    "main.js": "/HexaMineSweeper/static/js/main.0ae148f7.chunk.js",
+    "main.js.map": "/HexaMineSweeper/static/js/main.0ae148f7.chunk.js.map",
     "runtime-main.js": "/HexaMineSweeper/static/js/runtime-main.98ec4978.js",
     "runtime-main.js.map": "/HexaMineSweeper/static/js/runtime-main.98ec4978.js.map",
     "static/js/2.0af5561a.chunk.js": "/HexaMineSweeper/static/js/2.0af5561a.chunk.js",
     "static/js/2.0af5561a.chunk.js.map": "/HexaMineSweeper/static/js/2.0af5561a.chunk.js.map",
     "index.html": "/HexaMineSweeper/index.html",
-    "precache-manifest.d62d221adb0b031eb6909e4bc88d9ab2.js": "/HexaMineSweeper/precache-manifest.d62d221adb0b031eb6909e4bc88d9ab2.js",
+    "precache-manifest.7b50c0077f9f6c2d1ba1717eed49ec90.js": "/HexaMineSweeper/precache-manifest.7b50c0077f9f6c2d1ba1717eed49ec90.js",
     "service-worker.js": "/HexaMineSweeper/service-worker.js",
-    "static/css/main.5f361e03.chunk.css.map": "/HexaMineSweeper/static/css/main.5f361e03.chunk.css.map",
+    "static/css/main.b4f074ca.chunk.css.map": "/HexaMineSweeper/static/css/main.b4f074ca.chunk.css.map",
     "static/js/2.0af5561a.chunk.js.LICENSE.txt": "/HexaMineSweeper/static/js/2.0af5561a.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.98ec4978.js",
     "static/js/2.0af5561a.chunk.js",
-    "static/css/main.5f361e03.chunk.css",
-    "static/js/main.377982ef.chunk.js"
+    "static/css/main.b4f074ca.chunk.css",
+    "static/js/main.0ae148f7.chunk.js"
   ]
 }

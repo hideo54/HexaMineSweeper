@@ -28,12 +28,12 @@ const Hexagon = (props: {
       alert('GAME OVER!');
     } else {
       const neighbors = [
-        i % L === 0 ? i + L - 1 : -1,
-        i < (L**2 - L) ? i + L : -1,
-        i % L < (L - 1) ? i + 1 : -1,
+        i + L,
+        i % L === 0 ? -1 : i + L - 1,
+        i % L === (L - 1) ? -1 : i + 1,
         i % L === 0 ? -1 : i - 1,
-        i < L ? -1 : i - L,
-        i % L < (L - 1) ? i - L + 1 : -1,
+        i - L,
+        i % L === (L - 1) ? -1 : i - L + 1,
       ];
       num = neighbors.filter(nei => props.mines.includes(nei)).length;
       fill = 'white';

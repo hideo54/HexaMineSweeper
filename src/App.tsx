@@ -27,7 +27,7 @@ const Hexagon = (props: {
   const { width, i, mines } = props;
   const a = Math.floor(i / L);
   const b = i % L;
-  const topVw = 50 + (b - a) * 0.5 * width;
+  const topVw = (L * 0.5 * width) + (b - a) * 0.5 * width;
   const leftVw = (a + b) * 0.866 * width;
   let fill = 'gray';
   if (status === 'flagged') fill = 'blue';
@@ -70,7 +70,7 @@ const Hexagon = (props: {
   );
 };
 
-function App() {
+const App = () => {
   const [mines, setMines] = useState<number[]>(sampleSize(range(L ** 2), L));
   const masu = range(L ** 2).map(i =>
     <Hexagon key={i} width={5} i={i} mines={mines} />
@@ -91,9 +91,9 @@ function App() {
           にて作成されました。
         </li>
       </ul>
-      <div>{masu}</div>
+      <div style={{ position: 'relative' }}>{masu}</div>
     </>
   );
-}
+};
 
 export default App;
